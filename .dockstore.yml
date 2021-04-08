@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+   - name: sha256-cwl
+     subclass: CWL
+     primaryDescriptorPath: /sha256.cwl
+     filters:
+         branches:
+             - main
